@@ -1,0 +1,113 @@
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Minecraft.World", "Minecraft.World\Minecraft.World.vcxproj", "{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Minecraft.Client", "Minecraft.Client\Minecraft.Client.vcxproj", "{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8} = {F046C3CE-9749-4823-B32B-D9CC10B1A2C8}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		ContentPackage_NO_TU|PS3 = ContentPackage_NO_TU|PS3
+		ContentPackage_NO_TU|PSVita = ContentPackage_NO_TU|PSVita
+		ContentPackage_NO_TU|Xbox 360 = ContentPackage_NO_TU|Xbox 360
+		CONTENTPACKAGE_SYMBOLS|PS3 = CONTENTPACKAGE_SYMBOLS|PS3
+		CONTENTPACKAGE_SYMBOLS|PSVita = CONTENTPACKAGE_SYMBOLS|PSVita
+		CONTENTPACKAGE_SYMBOLS|Xbox 360 = CONTENTPACKAGE_SYMBOLS|Xbox 360
+		ContentPackage|PS3 = ContentPackage|PS3
+		ContentPackage|PSVita = ContentPackage|PSVita
+		ContentPackage|Xbox 360 = ContentPackage|Xbox 360
+		Debug|PS3 = Debug|PS3
+		Debug|PSVita = Debug|PSVita
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|PS3 = Release|PS3
+		Release|PSVita = Release|PSVita
+		Release|Xbox 360 = Release|Xbox 360
+		ReleaseForArt|PS3 = ReleaseForArt|PS3
+		ReleaseForArt|PSVita = ReleaseForArt|PSVita
+		ReleaseForArt|Xbox 360 = ReleaseForArt|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.ContentPackage_NO_TU|PS3.ActiveCfg = ContentPackage_NO_TU|PS3
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.ContentPackage_NO_TU|PS3.Build.0 = ContentPackage_NO_TU|PS3
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.ContentPackage_NO_TU|PSVita.ActiveCfg = ContentPackage_NO_TU|PSVita
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.ContentPackage_NO_TU|PSVita.Build.0 = ContentPackage_NO_TU|PSVita
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.ContentPackage_NO_TU|Xbox 360.ActiveCfg = ContentPackage_NO_TU|Xbox 360
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.ContentPackage_NO_TU|Xbox 360.Build.0 = ContentPackage_NO_TU|Xbox 360
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.ContentPackage_NO_TU|Xbox 360.Deploy.0 = ContentPackage_NO_TU|Xbox 360
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.CONTENTPACKAGE_SYMBOLS|PS3.ActiveCfg = CONTENTPACKAGE_SYMBOLS|PS3
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.CONTENTPACKAGE_SYMBOLS|PS3.Build.0 = CONTENTPACKAGE_SYMBOLS|PS3
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.CONTENTPACKAGE_SYMBOLS|PSVita.ActiveCfg = CONTENTPACKAGE_SYMBOLS|PSVita
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.CONTENTPACKAGE_SYMBOLS|Xbox 360.ActiveCfg = CONTENTPACKAGE_SYMBOLS|Xbox 360
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.CONTENTPACKAGE_SYMBOLS|Xbox 360.Build.0 = CONTENTPACKAGE_SYMBOLS|Xbox 360
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.ContentPackage|PS3.ActiveCfg = ContentPackage|PS3
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.ContentPackage|PS3.Build.0 = ContentPackage|PS3
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.ContentPackage|PSVita.ActiveCfg = ContentPackage|PSVita
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.ContentPackage|PSVita.Build.0 = ContentPackage|PSVita
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.ContentPackage|Xbox 360.ActiveCfg = ContentPackage|Xbox 360
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.ContentPackage|Xbox 360.Build.0 = ContentPackage|Xbox 360
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.ContentPackage|Xbox 360.Deploy.0 = ContentPackage|Xbox 360
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.Debug|PS3.ActiveCfg = Debug|PS3
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.Debug|PS3.Build.0 = Debug|PS3
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.Debug|PSVita.ActiveCfg = Debug|PSVita
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.Debug|PSVita.Build.0 = Debug|PSVita
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.Release|PS3.ActiveCfg = Release|PS3
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.Release|PS3.Build.0 = Release|PS3
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.Release|PSVita.ActiveCfg = Release|PSVita
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.Release|PSVita.Build.0 = Release|PSVita
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.ReleaseForArt|PS3.ActiveCfg = ReleaseForArt|PS3
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.ReleaseForArt|PS3.Build.0 = ReleaseForArt|PS3
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.ReleaseForArt|PSVita.ActiveCfg = ReleaseForArt|PSVita
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.ReleaseForArt|Xbox 360.ActiveCfg = ReleaseForArt|Xbox 360
+		{F046C3CE-9749-4823-B32B-D9CC10B1A2C8}.ReleaseForArt|Xbox 360.Build.0 = ReleaseForArt|Xbox 360
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.ContentPackage_NO_TU|PS3.ActiveCfg = ContentPackage_NO_TU|PS3
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.ContentPackage_NO_TU|PS3.Build.0 = ContentPackage_NO_TU|PS3
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.ContentPackage_NO_TU|PSVita.ActiveCfg = ContentPackage_NO_TU|PSVita
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.ContentPackage_NO_TU|PSVita.Build.0 = ContentPackage_NO_TU|PSVita
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.ContentPackage_NO_TU|Xbox 360.ActiveCfg = ContentPackage_NO_TU|Xbox 360
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.ContentPackage_NO_TU|Xbox 360.Build.0 = ContentPackage_NO_TU|Xbox 360
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.ContentPackage_NO_TU|Xbox 360.Deploy.0 = ContentPackage_NO_TU|Xbox 360
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.CONTENTPACKAGE_SYMBOLS|PS3.ActiveCfg = CONTENTPACKAGE_SYMBOLS|PS3
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.CONTENTPACKAGE_SYMBOLS|PS3.Build.0 = CONTENTPACKAGE_SYMBOLS|PS3
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.CONTENTPACKAGE_SYMBOLS|PSVita.ActiveCfg = CONTENTPACKAGE_SYMBOLS|PSVita
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.CONTENTPACKAGE_SYMBOLS|Xbox 360.ActiveCfg = CONTENTPACKAGE_SYMBOLS|Xbox 360
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.CONTENTPACKAGE_SYMBOLS|Xbox 360.Build.0 = CONTENTPACKAGE_SYMBOLS|Xbox 360
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.ContentPackage|PS3.ActiveCfg = ContentPackage|PS3
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.ContentPackage|PS3.Build.0 = ContentPackage|PS3
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.ContentPackage|PSVita.ActiveCfg = ContentPackage|PSVita
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.ContentPackage|PSVita.Build.0 = ContentPackage|PSVita
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.ContentPackage|Xbox 360.ActiveCfg = ContentPackage|Xbox 360
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.ContentPackage|Xbox 360.Build.0 = ContentPackage|Xbox 360
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.ContentPackage|Xbox 360.Deploy.0 = ContentPackage|Xbox 360
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.Debug|PS3.ActiveCfg = Debug|PS3
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.Debug|PS3.Build.0 = Debug|PS3
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.Debug|PSVita.ActiveCfg = Debug|PSVita
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.Debug|PSVita.Build.0 = Debug|PSVita
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.Release|PS3.ActiveCfg = Release|PS3
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.Release|PS3.Build.0 = Release|PS3
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.Release|PSVita.ActiveCfg = Release|PSVita
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.Release|PSVita.Build.0 = Release|PSVita
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.ReleaseForArt|PS3.ActiveCfg = ReleaseForArt|PS3
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.ReleaseForArt|PS3.Build.0 = ReleaseForArt|PS3
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.ReleaseForArt|PSVita.ActiveCfg = ReleaseForArt|PSVita
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.ReleaseForArt|Xbox 360.ActiveCfg = Release|Xbox 360
+		{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}.ReleaseForArt|Xbox 360.Build.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD5AC2E4-C1D3-45C3-AC34-06D43B233179}
+	EndGlobalSection
+EndGlobal

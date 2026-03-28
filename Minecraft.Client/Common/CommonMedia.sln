@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CommonMedia", "CommonMedia.vcxproj", "{21BBD32C-AF5E-4741-8B80-3B73FC0D0F27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21BBD32C-AF5E-4741-8B80-3B73FC0D0F27}.Debug|Win32.ActiveCfg = Debug|Win32
+		{21BBD32C-AF5E-4741-8B80-3B73FC0D0F27}.Debug|Win32.Build.0 = Debug|Win32
+		{21BBD32C-AF5E-4741-8B80-3B73FC0D0F27}.Release|Win32.ActiveCfg = Release|Win32
+		{21BBD32C-AF5E-4741-8B80-3B73FC0D0F27}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
