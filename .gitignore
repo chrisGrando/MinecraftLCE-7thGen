@@ -411,25 +411,22 @@ Minecraft.Client/Schematics/
 Minecraft.Client/Windows64/GameHDD/
 
 # Intermediate build files (per-project)
-Minecraft.Client/x64/
-Minecraft.Client/Debug/
-Minecraft.Client/x64_Debug/
-Minecraft.Client/Release/
-Minecraft.Client/x64_Release/
+Minecraft.Client/x64/*
+Minecraft.Client/Debug/*
+Minecraft.Client/Release/*
 
-Minecraft.World/x64/
-Minecraft.World/Debug/
-Minecraft.World/x64_Debug/
-Minecraft.World/Release/
-Minecraft.World/x64_Release/
+Minecraft.World/x64/*
+Minecraft.World/Debug/*
+Minecraft.World/Release/*
 
 build/*
 
-# Existing build output files
+# Redist
+!x64/**/redist64/binkawin64.asi
+!x64/**/redist64/*.flt
 !x64/**/Effects.msscmp
 !x64/**/iggy_w64.dll
 !x64/**/mss64.dll
-!x64/**/redist64/
 
 # Local saves
 Minecraft.Client/Saves/
