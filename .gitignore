@@ -414,12 +414,21 @@ Minecraft.Client/Windows64/GameHDD/
 Minecraft.Client/x64/*
 Minecraft.Client/Debug/*
 Minecraft.Client/Release/*
+Minecraft.Client/ContentPackage_NO_TU/*
+Minecraft.Client/CONTENTPACKAGE_SYMBOLS/*
+Minecraft.Client/ContentPackage/*
+Minecraft.Client/ReleaseForArt/*
 
 Minecraft.World/x64/*
 Minecraft.World/Debug/*
 Minecraft.World/Release/*
+Minecraft.World/ContentPackage_NO_TU/*
+Minecraft.World/CONTENTPACKAGE_SYMBOLS/*
+Minecraft.World/ContentPackage/*
+Minecraft.World/ReleaseForArt/*
 
 build/*
+ipch/*
 
 # Redist
 !x64/**/redist64/binkawin64.asi
@@ -429,7 +438,8 @@ build/*
 !x64/**/mss64.dll
 
 # Local saves
-Minecraft.Client/Saves/
+Minecraft.Client/Saves/*
+**/Windows64/GameHDD/*
 
 # Visual Studio Per-User Config
 *.user
