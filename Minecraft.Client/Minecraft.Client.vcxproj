@@ -228,7 +228,6 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
     <DefaultLanguage>en-US</DefaultLanguage>
     <ProjectGuid>{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}</ProjectGuid>
     <SccProjectName>
