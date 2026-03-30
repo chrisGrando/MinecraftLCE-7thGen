@@ -1,20 +1,18 @@
-
 #pragma once
-
 
 #define VER_PRODUCTMAJORVERSION     0
 #define VER_PRODUCTMINORVERSION     0
 
 // This goes up with each build
 // 4J-JEV: This value is extracted with a regex so it can be placed as the version in the AppX manifest on Durango.
-#define VER_PRODUCTBUILD            495
+#define VER_PRODUCTBUILD            560
 // This goes up if there is any change to network traffic or code in a build
-#define VER_NETWORK		            495
+#define VER_NETWORK		            VER_PRODUCTBUILD
 #define VER_PRODUCTBUILD_QFE        0
 
-#define VER_FILEVERSION_STRING       "1.3"
+#define VER_FILEVERSION_STRING       "1.6"
 #define VER_PRODUCTVERSION_STRING    VER_FILEVERSION_STRING
-#define VER_FILEVERSION_STRING_W     L"1.3"
+#define VER_FILEVERSION_STRING_W     L"1.6"
 #define VER_PRODUCTVERSION_STRING_W  VER_FILEVERSION_STRING_W
 #define VER_FILEBETA_STR         ""
 #undef VER_FILEVERSION
@@ -52,6 +50,3 @@
 #if     (VER_PRODUCTBUILD_QFE >= 256)
 #error  "QFE number cannot exceed 255"
 #endif
-
-
-
