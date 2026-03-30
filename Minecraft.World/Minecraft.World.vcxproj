@@ -1081,7 +1081,7 @@
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <PrecompiledHeaderOutputFile>$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <PreprocessorDefinitions>_DEBUG_MENUS_ENABLED;_ITERATOR_DEBUG_LEVEL=0;_SECURE_SCL=0;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG_MENUS_ENABLED;_ITERATOR_DEBUG_LEVEL=0;_SECURE_SCL=0;_DEBUG;__PS3__;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <CallAttributedProfiling>Disabled</CallAttributedProfiling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <ShowIncludes>false</ShowIncludes>
@@ -1140,7 +1140,7 @@
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <PrecompiledHeaderOutputFile>$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <PreprocessorDefinitions>_DEBUG_MENUS_ENABLED;_ITERATOR_DEBUG_LEVEL=0;_SECURE_SCL=0;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG_MENUS_ENABLED;_ITERATOR_DEBUG_LEVEL=0;_SECURE_SCL=0;__PS3__;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <CallAttributedProfiling>Disabled</CallAttributedProfiling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <ShowIncludes>false</ShowIncludes>
@@ -1172,7 +1172,7 @@
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <PrecompiledHeaderOutputFile>$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <PreprocessorDefinitions>_DEBUG_MENUS_ENABLED;_ITERATOR_DEBUG_LEVEL=0;_SECURE_SCL=0;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG_MENUS_ENABLED;_ITERATOR_DEBUG_LEVEL=0;_SECURE_SCL=0;__PS3__;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <CallAttributedProfiling>Disabled</CallAttributedProfiling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <ShowIncludes>false</ShowIncludes>
@@ -1662,7 +1662,7 @@
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <PrecompiledHeaderOutputFile>$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <PreprocessorDefinitions>_CONTENT_PACKAGE;_FINAL_BUILD;_ITERATOR_DEBUG_LEVEL=0;_SECURE_SCL=0;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CONTENT_PACKAGE;_FINAL_BUILD;_ITERATOR_DEBUG_LEVEL=0;_SECURE_SCL=0;__PS3__;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DisableSpecificWarnings>1700;613;1011</DisableSpecificWarnings>
@@ -1725,7 +1725,7 @@
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <PrecompiledHeaderOutputFile>$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <PreprocessorDefinitions>_CONTENT_PACKAGE;_FINAL_BUILD;_ITERATOR_DEBUG_LEVEL=0;_SECURE_SCL=0;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CONTENT_PACKAGE;_FINAL_BUILD;_ITERATOR_DEBUG_LEVEL=0;_SECURE_SCL=0;__PS3__;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DisableSpecificWarnings>1700;613;1011</DisableSpecificWarnings>
@@ -1785,7 +1785,7 @@
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <PrecompiledHeaderOutputFile>$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <PreprocessorDefinitions>_DEBUG_MENUS_ENABLED;_ITERATOR_DEBUG_LEVEL=0;_SECURE_SCL=0;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG_MENUS_ENABLED;_ITERATOR_DEBUG_LEVEL=0;_SECURE_SCL=0;__PS3__;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DisableSpecificWarnings>1700;613;1011</DisableSpecificWarnings>
@@ -1842,7 +1842,7 @@
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <PrecompiledHeaderOutputFile>$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <PreprocessorDefinitions>_TU_BUILD;_FINAL_BUILD;NDEBUG;_XBOX;_LIB;_CONTENT_PACKAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_TU_BUILD;_FINAL_BUILD;NDEBUG;_XBOX;__PS3__;_LIB;_CONTENT_PACKAGE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DisableSpecificWarnings>1700;613;1011</DisableSpecificWarnings>
