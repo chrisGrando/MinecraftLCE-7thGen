@@ -20,7 +20,6 @@ wstring Language::getElement(const wstring& elementId)
 	return elementId;
 } */
 
-#if defined(_XBOX) || defined(__PS3__) || defined(__PSVITA__)
 wstring Language::getElement(const wstring& elementId, ...)
 {
 #ifdef __PSVITA__		// 4J - vita doesn't like having a reference type as the last parameter passed to va_start - we shouldn't need this method anyway
@@ -47,14 +46,3 @@ wstring Language::getElementDescription(const wstring& elementId)
 {
 	return elementId;
 }
-#else
-std::wstring Language::getElementName(const std::wstring& elementId)
-{
-	return elementId;
-}
-
-std::wstring Language::getElementDescription(const std::wstring& elementId)
-{
-	return elementId;
-}
-#endif

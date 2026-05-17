@@ -2,7 +2,6 @@
 #include "Language.h"
 #include "I18n.h"
 
-#if defined(_XBOX) || defined(__PS3__) || defined(__PSVITA__)
 Language *I18n::lang = Language::getInstance();
 wstring I18n::get(const wstring& id, ...)
 {
@@ -19,6 +18,3 @@ wstring I18n::get(const wstring& id, va_list args)
 {
 	return lang->getElement(id, args);
 }
-#else
-Language* I18n::lang = Language::getInstance();
-#endif

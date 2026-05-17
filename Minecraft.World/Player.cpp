@@ -2558,13 +2558,11 @@ int Player::getTexture()
 int Player::hash_fnct(const shared_ptr<Player> k)
 {
 	// TODO 4J Stu - Should we just be using the pointers and hashing them?
-#if defined(__PS3__)
-	return (int)boost::hash_value(k->name); // 4J Stu - Names are completely unique?
-#elif defined(_XBOX) || defined(__PSVITA__)
-	return (int)std::hash_value( k->name ); // 4J Stu - Names are completely unique?
+#ifdef __PS3__
+	return (int)boost::hash_value( k->name ); // 4J Stu - Names are completely unique?
 #else
-	return static_cast<int>(std::hash<wstring>{}(k->name)); // 4J Stu - Names are completely unique?
-#endif
+	return (int)std::hash_value( k->name ); // 4J Stu - Names are completely unique?
+#endif //__PS3__
 }
 
 bool Player::eq_test(const shared_ptr<Player> x, const shared_ptr<Player> y)
