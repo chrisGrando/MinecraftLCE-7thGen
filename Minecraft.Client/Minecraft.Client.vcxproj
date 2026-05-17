@@ -227,7 +227,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
     <DefaultLanguage>en-US</DefaultLanguage>
     <ProjectGuid>{1B9A8C38-DD48-448C-AA24-E1A35E0089A3}</ProjectGuid>
     <SccProjectName>
@@ -799,7 +798,7 @@
     <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
     <GenerateManifest>true</GenerateManifest>
     <TargetName>$(ProjectName)</TargetName>
-    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(OutputPath)</IntDir>
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <CustomBuildBeforeTargets>
     </CustomBuildBeforeTargets>
@@ -849,7 +848,7 @@
     <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
     <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
     <TargetName>$(ProjectName)</TargetName>
-    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(OutputPath)</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_Vita|Durango'">
     <LinkIncremental>true</LinkIncremental>
@@ -860,7 +859,7 @@
     <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
     <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
     <TargetName>$(ProjectName)</TargetName>
-    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(OutputPath)</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage|Xbox 360'">
     <LinkIncremental>false</LinkIncremental>
@@ -1032,7 +1031,7 @@
     <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
     <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
     <TargetName>$(ProjectName)</TargetName>
-    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(OutputPath)</IntDir>
     <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|Durango'">
@@ -1123,7 +1122,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutputPath)$(ProjectName).pdb</ProgramDatabaseFile>
-      <AdditionalDependencies>xavatar2d.lib;xapilibd.lib;d3d9d.lib;d3dx9d.lib;xgraphicsd.lib;xboxkrnl.lib;xnetd.lib;xaudiod2.lib;xactd3.lib;x3daudiod.lib;xmcored.lib;xbdm.lib;vcompd.lib;xuirund.lib;xuirenderd.lib;xuihtmld.lib;xonline.lib;xhvd2.lib;qnetxaudio2d.lib;xpartyd.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xbox\4JLibs\libs\4J_Input_d.lib;xbox\4JLibs\libs\4J_Storage_d.lib;xbox\4JLibs\libs\4J_Profile_d.lib;xbox\4JLibs\libs\4J_Render_d.lib;xsocialpostd.lib;xrnmd.lib;xbox\Sentient\libs\SenCoreD.lib;xbox\Sentient\libs\SenNewsD.lib;xbox\Sentient\libs\SenUGCD.lib;xbox\Sentient\libs\SenBoxArtD.lib;nuiapid.lib;STd.lib;NuiFitnessApid.lib;NuiHandlesd.lib;NuiSpeechd.lib;xhttpd.lib;xauthd.lib;xgetserviceendpointd.lib;xavd.lib;xjsond.lib;xbox\4JLibs\libs\4J_XTMS_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2d.lib;xapilibd.lib;d3d9d.lib;d3dx9d.lib;xgraphicsd.lib;xboxkrnl.lib;xnetd.lib;xaudiod2.lib;xactd3.lib;x3daudiod.lib;xmcored.lib;xbdm.lib;vcompd.lib;xuirund.lib;xuirenderd.lib;xuihtmld.lib;xonline.lib;xhvd2.lib;qnetxaudio2d.lib;xpartyd.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xbox\4JLibs\libs\4J_Input_d.lib;xbox\4JLibs\libs\4J_Storage_d.lib;xbox\4JLibs\libs\4J_Profile_d.lib;xbox\4JLibs\libs\4J_Render_d.lib;xsocialpostd.lib;xrnmd.lib;xbox\Sentient\libs\SenCoreD.lib;xbox\Sentient\libs\SenNewsD.lib;xbox\Sentient\libs\SenUGCD.lib;xbox\Sentient\libs\SenBoxArtD.lib;nuiapid.lib;STd.lib;NuiFitnessApid.lib;NuiHandlesd.lib;NuiSpeechd.lib;xhttpd.lib;xauthd.lib;xgetserviceendpointd.lib;xavd.lib;xjsond.lib;xbox\4JLibs\libs\4J_XTMS_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ImageXex>
       <ConfigurationFile>$(ProjectDir)xbox\xex-dev.xml</ConfigurationFile>
@@ -1163,7 +1162,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutputPath)$(ProjectName).pdb</ProgramDatabaseFile>
-      <AdditionalDependencies>xavatar2.lib;xapilibi.lib;d3d9i.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xparty.lib;xbox\4JLibs\libs\4J_Input_r.lib;xbox\4JLibs\libs\4J_Storage_r.lib;xbox\4JLibs\libs\4J_Profile_r.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xbdm.lib;xsocialpost.lib;xrnm.lib;xbox\Sentient\libs\SenCore.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;xbox\4JLibs\libs\4J_XTMS_r.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilibi.lib;d3d9i.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xparty.lib;xbox\4JLibs\libs\4J_Input_r.lib;xbox\4JLibs\libs\4J_Storage_r.lib;xbox\4JLibs\libs\4J_Profile_r.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xbdm.lib;xsocialpost.lib;xrnm.lib;xbox\Sentient\libs\SenCore.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;xbox\4JLibs\libs\4J_XTMS_r.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>false</EnableCOMDATFolding>
@@ -1208,7 +1207,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutputPath)$(ProjectName).pdb</ProgramDatabaseFile>
-      <AdditionalDependencies>xavatar2.lib;xapilibi.lib;d3d9i.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xparty.lib;xbox\4JLibs\libs\4J_Input_r.lib;xbox\4JLibs\libs\4J_Storage_r.lib;xbox\4JLibs\libs\4J_Profile_r.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xbdm.lib;xsocialpost.lib;xrnm.lib;xbox\Sentient\libs\SenCore.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;xtms.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilibi.lib;d3d9i.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xparty.lib;xbox\4JLibs\libs\4J_Input_r.lib;xbox\4JLibs\libs\4J_Storage_r.lib;xbox\4JLibs\libs\4J_Profile_r.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xbdm.lib;xsocialpost.lib;xrnm.lib;xbox\Sentient\libs\SenCore.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;xtms.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>false</EnableCOMDATFolding>
@@ -1559,7 +1558,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutputPath)$(ProjectName).pdb</ProgramDatabaseFile>
-      <AdditionalDependencies>legacy_stdio_definitions.lib;d3d11.lib;d3dcompiler.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;%(AdditionalDependencies);XInput9_1_0.lib;wsock32.lib</AdditionalDependencies>
+      <AdditionalDependencies>legacy_stdio_definitions.lib;d3d11.lib;d3dcompiler.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;%(AdditionalDependencies);XInput9_1_0.lib;wsock32.lib</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
       <SuppressStartupBanner>false</SuppressStartupBanner>
     </Link>
@@ -1607,7 +1606,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutputPath)$(ProjectName).pdb</ProgramDatabaseFile>
-      <AdditionalDependencies>d3d11.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;%(AdditionalDependencies);XInput9_1_0.lib;wsock32.lib</AdditionalDependencies>
+      <AdditionalDependencies>d3d11.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;%(AdditionalDependencies);XInput9_1_0.lib;wsock32.lib</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
       <SuppressStartupBanner>false</SuppressStartupBanner>
     </Link>
@@ -1649,7 +1648,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutputPath)$(ProjectName).pdb</ProgramDatabaseFile>
-      <AdditionalDependencies>d3d11.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;%(AdditionalDependencies);XInput9_1_0.lib</AdditionalDependencies>
+      <AdditionalDependencies>d3d11.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;%(AdditionalDependencies);XInput9_1_0.lib</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
       <SuppressStartupBanner>false</SuppressStartupBanner>
     </Link>
@@ -1695,7 +1694,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutputPath)$(ProjectName).pdb</ProgramDatabaseFile>
-      <AdditionalDependencies>ws2_32.lib;pixEvt.lib;d3d11_x.lib;combase.lib;kernelx.lib;uuid.lib;xaudio2.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;EtwPlus.lib;..\Minecraft.Client\Durango\DurangoExtras\xcompress.lib</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;pixEvt.lib;d3d11_x.lib;combase.lib;kernelx.lib;uuid.lib;xaudio2.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;EtwPlus.lib;..\Minecraft.Client\Durango\DurangoExtras\xcompress.lib</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <SubSystem>Console</SubSystem>
@@ -1778,7 +1777,7 @@ xcopy /q /y /i /s /e $(ProjectDir)DurangoMedia\CU  $(LayoutDir)Image\Loose\CU</C
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutputPath)$(ProjectName).pdb</ProgramDatabaseFile>
-      <AdditionalDependencies>legacy_stdio_definitions.lib;d3d11.lib;d3dcompiler.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;XInput9_1_0.lib;Windows64\Iggy\lib\iggy_w64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>legacy_stdio_definitions.lib;d3d11.lib;d3dcompiler.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;XInput9_1_0.lib;Windows64\Iggy\lib\iggy_w64.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
       <SuppressStartupBanner>false</SuppressStartupBanner>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
@@ -1826,7 +1825,7 @@ xcopy /q /y /i /s /e $(ProjectDir)DurangoMedia\CU  $(LayoutDir)Image\Loose\CU</C
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutputPath)$(ProjectName).pdb</ProgramDatabaseFile>
-      <AdditionalDependencies>legacy_stdio_definitions.lib;d3d11.lib;d3dcompiler.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;XInput9_1_0.lib;Windows64\Iggy\lib\iggy_w64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>legacy_stdio_definitions.lib;d3d11.lib;d3dcompiler.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;XInput9_1_0.lib;Windows64\Iggy\lib\iggy_w64.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
       <SuppressStartupBanner>false</SuppressStartupBanner>
     </Link>
@@ -1867,7 +1866,7 @@ xcopy /q /y /i /s /e $(ProjectDir)DurangoMedia\CU  $(LayoutDir)Image\Loose\CU</C
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutputPath)$(ProjectName).pdb</ProgramDatabaseFile>
-      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;XInput9_1_0.lib;Windows64\Iggy\lib\iggy_w64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;XInput9_1_0.lib;Windows64\Iggy\lib\iggy_w64.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
       <SuppressStartupBanner>false</SuppressStartupBanner>
     </Link>
@@ -1904,7 +1903,7 @@ xcopy /q /y /i /s /e $(ProjectDir)DurangoMedia\CU  $(LayoutDir)Image\Loose\CU</C
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutputPath)$(ProjectName).pdb</ProgramDatabaseFile>
-      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;XInput9_1_0.lib;Windows64\Iggy\lib\iggy_w64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;XInput9_1_0.lib;Windows64\Iggy\lib\iggy_w64.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
       <SuppressStartupBanner>false</SuppressStartupBanner>
     </Link>
@@ -1941,7 +1940,7 @@ xcopy /q /y /i /s /e $(ProjectDir)DurangoMedia\CU  $(LayoutDir)Image\Loose\CU</C
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutputPath)$(ProjectName).pdb</ProgramDatabaseFile>
-      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;XInput9_1_0.lib;Windows64\Iggy\lib\iggy_w64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;XInput9_1_0.lib;Windows64\Iggy\lib\iggy_w64.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
       <SuppressStartupBanner>false</SuppressStartupBanner>
     </Link>
@@ -1978,7 +1977,7 @@ xcopy /q /y /i /s /e $(ProjectDir)DurangoMedia\CU  $(LayoutDir)Image\Loose\CU</C
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutputPath)$(ProjectName).pdb</ProgramDatabaseFile>
-      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;XInput9_1_0.lib;Windows64\Iggy\lib\iggy_w64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;XInput9_1_0.lib;Windows64\Iggy\lib\iggy_w64.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
       <SuppressStartupBanner>false</SuppressStartupBanner>
     </Link>
@@ -2020,7 +2019,7 @@ xcopy /q /y /i /s /e $(ProjectDir)DurangoMedia\CU  $(LayoutDir)Image\Loose\CU</C
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutputPath)$(ProjectName).pdb</ProgramDatabaseFile>
-      <AdditionalDependencies>ws2_32.lib;pixEvt.lib;d3d11_x.lib;combase.lib;kernelx.lib;uuid.lib;xaudio2.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;EtwPlus.lib;..\Minecraft.Client\Durango\DurangoExtras\xcompress.lib</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;pixEvt.lib;d3d11_x.lib;combase.lib;kernelx.lib;uuid.lib;xaudio2.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;EtwPlus.lib;..\Minecraft.Client\Durango\DurangoExtras\xcompress.lib</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <SubSystem>Console</SubSystem>
@@ -2095,7 +2094,7 @@ xcopy /q /y /i /s /e $(ProjectDir)DurangoMedia\CU  $(LayoutDir)Image\Loose\CU</C
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(OutputPath)$(ProjectName).pdb</ProgramDatabaseFile>
-      <AdditionalDependencies>ws2_32.lib;pixEvt.lib;d3d11_x.lib;combase.lib;kernelx.lib;uuid.lib;xaudio2.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;EtwPlus.lib;..\Minecraft.Client\Durango\DurangoExtras\xcompress.lib</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;pixEvt.lib;d3d11_x.lib;combase.lib;kernelx.lib;uuid.lib;xaudio2.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;EtwPlus.lib;..\Minecraft.Client\Durango\DurangoExtras\xcompress.lib</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <SubSystem>Console</SubSystem>
@@ -2165,7 +2164,7 @@ copy /B /Y $(ProjectDir)Durango\DurangoExtras\xcompress.dll $(LayoutDir)Image\Lo
       <OptimizeReferences>true</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;xbox\4JLibs\libs\4J_XTMS_r.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;xbox\4JLibs\libs\4J_XTMS_r.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -2202,7 +2201,7 @@ copy /B /Y $(ProjectDir)Durango\DurangoExtras\xcompress.dll $(LayoutDir)Image\Lo
       <OptimizeReferences>true</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;xtms.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;xtms.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -2239,7 +2238,7 @@ copy /B /Y $(ProjectDir)Durango\DurangoExtras\xcompress.dll $(LayoutDir)Image\Lo
       <OptimizeReferences>true</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;xtms.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;xtms.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -2277,7 +2276,7 @@ copy /B /Y $(ProjectDir)Durango\DurangoExtras\xcompress.dll $(LayoutDir)Image\Lo
       <OptimizeReferences>true</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;xbox\4JLibs\libs\4J_XTMS_r.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;xbox\4JLibs\libs\4J_XTMS_r.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -2604,7 +2603,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
       <OptimizeReferences>false</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -2682,7 +2681,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
       <OptimizeReferences>false</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -2718,7 +2717,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
       <OptimizeReferences>false</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -2754,7 +2753,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
       <OptimizeReferences>false</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -2790,7 +2789,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
       <OptimizeReferences>false</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -2826,7 +2825,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
       <OptimizeReferences>false</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -2862,7 +2861,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
       <OptimizeReferences>false</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -2898,7 +2897,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
       <OptimizeReferences>false</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -2934,7 +2933,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
       <OptimizeReferences>false</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -2970,7 +2969,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
       <OptimizeReferences>false</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -3006,7 +3005,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
       <OptimizeReferences>false</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -3042,7 +3041,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
       <OptimizeReferences>false</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -3078,7 +3077,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
       <OptimizeReferences>false</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -3118,7 +3117,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
       <OptimizeReferences>false</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)$(ProjectName).pdb</ProgramDatabaseFile>
       <SetChecksum>false</SetChecksum>
-      <AdditionalDependencies>ws2_32.lib;d3d11_x.lib;combase.lib;kernelx.lib;uuid.lib;xaudio2.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;EtwPlus.lib;..\Minecraft.Client\Durango\DurangoExtras\xcompress.lib</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;d3d11_x.lib;combase.lib;kernelx.lib;uuid.lib;xaudio2.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;EtwPlus.lib;..\Minecraft.Client\Durango\DurangoExtras\xcompress.lib</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>kernel32.lib;oldnames.lib;runtimeobject.lib;ole32.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>true</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -3181,7 +3180,7 @@ xcopy /q /y /i /s /e $(ProjectDir)DurangoMedia\CU  $(LayoutDir)Image\Loose\CU</C
       <OptimizeReferences>false</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -3226,7 +3225,7 @@ xcopy /q /y /i /s /e $(ProjectDir)DurangoMedia\CU  $(LayoutDir)Image\Loose\CU</C
       <OptimizeReferences>false</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;..\Minecraft.Client\Durango\DurangoExtras\xcompress.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;..\Minecraft.Client\Durango\DurangoExtras\xcompress.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -3282,7 +3281,7 @@ xcopy /q /y /i /s /e $(ProjectDir)Durango\CU  $(LayoutDir)Image\Loose\CU</Comman
       <OptimizeReferences>false</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -3327,7 +3326,7 @@ xcopy /q /y /i /s /e $(ProjectDir)Durango\CU  $(LayoutDir)Image\Loose\CU</Comman
       <OptimizeReferences>false</OptimizeReferences>
       <ProgramDatabaseFile>$(OutputPath)default.pdb</ProgramDatabaseFile>
       <SetChecksum>true</SetChecksum>
-      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;..\Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>xavatar2.lib;xapilib.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xbox\Sentient\libs\SenCore.lib;xnet.lib;xaudio2.lib;xact3.lib;x3daudio.lib;xmcore.lib;vcomp.lib;xuirun.lib;xuirender.lib;xuihtml.lib;xonline.lib;xhv2.lib;qnetxaudio2.lib;xbox\4JLibs\libs\4J_Input.lib;xbox\4JLibs\libs\4J_Storage.lib;xbox\4JLibs\libs\4J_Profile.lib;xbox\4JLibs\libs\4J_Render.lib;$(SolutionDir)Minecraft.World\bin\$(Platform)\$(Configuration)\Minecraft.World.lib;xsocialpost.lib;xrnm.lib;xparty.lib;xbox\Sentient\libs\SenNews.lib;xbox\Sentient\libs\SenUGC.lib;xbox\Sentient\libs\SenBoxArt.lib;NuiApi.lib;ST.lib;NuiFitnessApi.lib;NuiHandles.lib;NuiSpeech.lib;NuiAudio.lib;xhttp.lib;xauth.lib;xgetserviceendpoint.lib;xav.lib;xjson.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>xapilib.lib</IgnoreSpecificDefaultLibraries>
       <GenerateMapFile>false</GenerateMapFile>
       <MapExports>false</MapExports>
@@ -29537,20 +29536,20 @@ xcopy /q /y /i /s /e $(ProjectDir)Durango\CU  $(LayoutDir)Image\Loose\CU</Comman
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ContentPackage_Vita|ORBIS'">Create</PrecompiledHeader>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='ContentPackage|PS3'">$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='ContentPackage|PSVita'">$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|PS3'">$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|PSVita'">$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|PS3'">$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|PSVita'">$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|PS3'">$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|PSVita'">$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|PS3'">$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|PS3'">$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='ContentPackage_Vita|PS3'">$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='ContentPackage_Vita|PSVita'">$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='ContentPackage|PS3'">$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='ContentPackage|PSVita'">$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|PS3'">$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|PSVita'">$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|PS3'">$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|PSVita'">$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|PS3'">$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|PSVita'">$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|PS3'">$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|PS3'">$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='ContentPackage_Vita|PS3'">$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='ContentPackage_Vita|PSVita'">$(OutputPath)$(ProjectName).pch</PrecompiledHeaderOutputFile>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">$(IntDir)%(Filename)$(ObjectExt)</ObjectFileName>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ContentPackage_Vita|ORBIS'">$(IntDir)%(Filename)$(ObjectExt)</ObjectFileName>
     </ClCompile>

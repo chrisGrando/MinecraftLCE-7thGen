@@ -1,5 +1,5 @@
 mkdir .\Package
-copy ..\..\ContentPackage\default.xex .\Package\default.xex
+copy "..\..\bin\Xbox 360\ContentPackage\default.xex" .\Package\default.xex
 
 REM Copy files from the Gameconfig
 
