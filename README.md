@@ -5,16 +5,8 @@
 This is the original and (almost) untouched leaked source code of Minecraft Legacy Console Edition.
 The goal of this repository is to keep it able to build for the 7th Generation Consoles (Xbox 360, PS3 and PSVita).
 
-## Help Needed
-
-I also wanted to add support for Windows (32 and 64 bits), Xbox One and PS4 builds, but due to incompatibilities
-across IDEs, I wasn't able to do it without breaking the builds for Xbox 360, PS3 and PSVita (which ARE the main
-goal here). 
-
-If you know how to fix those issues, you're more than welcome to create a **pull request**. The only thing I ask is to
-keep the source code as close as possible to the original.
-
-Pull requests to fix issues on Xbox 360, PS3 and PSVita builds are accepted as well, but adding new features aren't.
+Feel free to open a pull request to fix any issue in the source code. However, I won't accept any that adds new
+features or that breaks Xbox 360 / PS3 / PSVita builds.
 
 ## Building for the 7th Generation
 
@@ -34,17 +26,16 @@ Pull requests to fix issues on Xbox 360, PS3 and PSVita builds are accepted as w
 ## Building for PC and 8th Generation
 
 > [!CAUTION]
-> Currently broken.
+> Building for Xbox One, PS4 and 32-bit Windows was NOT tested!
 
 ### Requirements
-1. Visual Studio 2019
-2. Desktop C++ Development Tools
-3. Windows 10 SDK
-4. (Consoles ONLY) SDK of Xbox One / PS4
+1. Visual Studio 2012 Professional (or Ultimate)
+2. Windows 10 SDK
+3. (Consoles ONLY) SDK of Xbox One / PS4
 
 ### Build
 
-1. Open `MinecraftPC.sln` on VS2019.
+1. Open `MinecraftPC.sln` on VS2012.
 2. Set configuration to `Release`.
 3. Set platform to the one you wish to build it for (x86, x64, Durango, Orbis).
 4. On the top bar, select `Build -> Build Solution`.
