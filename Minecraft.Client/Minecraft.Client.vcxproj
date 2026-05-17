@@ -725,71 +725,96 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName)_D.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName).xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_Vita|Xbox 360'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName).xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PS3'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName)_D.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\..\Minecraft.Client\PS3\Assert;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;$(SCE_PS3_ROOT)\host-win32\sn\ppu\include;$(ProjectDir)\..\Minecraft.Client\PS3\PS3Extras;$(ProjectDir)\..\Minecraft.Client\PS3\PS3Extras\boost_1_53_0\boost\tr1\tr1;$(ProjectDir)\..\Minecraft.Client\PS3\PS3Extras\boost_1_53_0;$(ProjectDir)..\Minecraft.World\x64headers</IncludePath>
     <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName)_D.xex</ImageXexOutput>
     <IncludePath>$(SCE_PSP2_SDK_DIR)/target\src\npToolkit\include;$(ProjectDir)\..\Minecraft.Client\PSVita\Assert;$(ProjectDir);$(ProjectDir)..\Minecraft.World\x64headers;$(ProjectDir)\..\Minecraft.Client\PSVita\PSVitaExtras</IncludePath>
     <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|PS3'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName)_D.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\..\Minecraft.Client\PS3\Assert;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;$(SCE_PS3_ROOT)\host-win32\sn\ppu\include;$(ProjectDir)\..\Minecraft.Client\PS3\PS3Extras;$(ProjectDir)\..\Minecraft.Client\PS3\PS3Extras\boost_1_53_0\boost\tr1\tr1;$(ProjectDir)\..\Minecraft.Client\PS3\PS3Extras\boost_1_53_0;$(ProjectDir)..\Minecraft.World\x64headers</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_Vita|PS3'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName)_D.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\..\Minecraft.Client\PS3\Assert;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;$(SCE_PS3_ROOT)\host-win32\sn\ppu\include;$(ProjectDir)\..\Minecraft.Client\PS3\PS3Extras;$(ProjectDir)\..\Minecraft.Client\PS3\PS3Extras\boost_1_53_0\boost\tr1\tr1;$(ProjectDir)\..\Minecraft.Client\PS3\PS3Extras\boost_1_53_0;$(ProjectDir)..\Minecraft.World\x64headers</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName)_D.xex</ImageXexOutput>
     <IncludePath>$(SCE_PSP2_SDK_DIR)/target\src\npToolkit\include;$(ProjectDir)..\Minecraft.Client\PSVita\Assert;$(ProjectDir);$(ProjectDir)..\Minecraft.World\x64headers;$(ProjectDir)\..\Minecraft.Client\PSVita\PSVitaExtras</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_Vita|PSVita'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName)_D.xex</ImageXexOutput>
     <IncludePath>$(SCE_PSP2_SDK_DIR)/target\src\npToolkit\include;$(MINECRAFT_CONSOLES_DIR)\Minecraft.Client\PSVita\Assert;$(ProjectDir);$(ProjectDir)..\Minecraft.World\x64headers;$(ProjectDir)\..\Minecraft.Client\PSVita\PSVitaExtras</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName)_D.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
     <EnableClangTidyCodeAnalysis>false</EnableClangTidyCodeAnalysis>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64EC'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName)_D.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName)_D.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Durango'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName)_D.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)Durango\DurangoExtras;$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)\Xbox\Sentient\Include;$(Console_SdkIncludeRoot)</IncludePath>
     <ExecutablePath>$(Console_SdkRoot)bin;$(VCInstallDir)bin\x86_amd64;$(VCInstallDir)bin;$(WindowsSDK_ExecutablePath_x86);$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(MSBuildToolsPath32);$(FxCopDir);$(PATH);</ExecutablePath>
@@ -798,49 +823,62 @@
     <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
     <GenerateManifest>true</GenerateManifest>
     <TargetName>$(ProjectName)</TargetName>
-    <IntDir>$(OutputPath)</IntDir>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <CustomBuildBeforeTargets>
     </CustomBuildBeforeTargets>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName)_D.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
     <EnableClangTidyCodeAnalysis>false</EnableClangTidyCodeAnalysis>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64EC'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName)_D.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName)_D.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_Vita|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName)_D.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
     <EnableClangTidyCodeAnalysis>false</EnableClangTidyCodeAnalysis>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_Vita|ARM64EC'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName)_D.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_Vita|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName)_D.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Durango'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName)_D.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)Durango\DurangoExtras;$(ProjectDir)\x64headers;$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)\Xbox\Sentient\Include;$(Console_SdkIncludeRoot)</IncludePath>
     <ExecutablePath>$(Console_SdkRoot)bin;$(VCInstallDir)bin\x86_amd64;$(VCInstallDir)bin;$(WindowsSDK_ExecutablePath_x86);$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(MSBuildToolsPath32);$(FxCopDir);$(PATH);</ExecutablePath>
@@ -848,10 +886,11 @@
     <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
     <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
     <TargetName>$(ProjectName)</TargetName>
-    <IntDir>$(OutputPath)</IntDir>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_Vita|Durango'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName)_D.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)Durango\DurangoExtras;$(ProjectDir)\x64headers;$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)\Xbox\Sentient\Include;$(Console_SdkIncludeRoot)</IncludePath>
     <ExecutablePath>$(Console_SdkRoot)bin;$(VCInstallDir)bin\x86_amd64;$(VCInstallDir)bin;$(WindowsSDK_ExecutablePath_x86);$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(MSBuildToolsPath32);$(FxCopDir);$(PATH);</ExecutablePath>
@@ -859,170 +898,219 @@
     <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
     <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
     <TargetName>$(ProjectName)</TargetName>
-    <IntDir>$(OutputPath)</IntDir>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage|Xbox 360'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|Xbox 360'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|Xbox 360'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|Xbox 360'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage|PS3'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\..\Minecraft.Client\PS3\Assert;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;$(SCE_PS3_ROOT)\host-win32\sn\ppu\include;$(ProjectDir)\..\Minecraft.Client\PS3\PS3Extras;$(ProjectDir)\..\Minecraft.Client\PS3\PS3Extras\boost_1_53_0\boost\tr1\tr1;$(ProjectDir)\..\Minecraft.Client\PS3\PS3Extras\boost_1_53_0;$(ProjectDir)..\Minecraft.World\x64headers</IncludePath>
     <TargetExt>.elf</TargetExt>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage|PSVita'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <ImageXexOutput>$(OutputPath)$(ProjectName)_D.xex</ImageXexOutput>
     <IncludePath>$(SCE_PSP2_SDK_DIR)/target\src\npToolkit\include;$(ProjectDir)..\Minecraft.Client\PSVita\Assert;$(ProjectDir);$(ProjectDir)..\Minecraft.World\x64headers;$(ProjectDir)\..\Minecraft.Client\PSVita\PSVitaExtras</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|PS3'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\..\Minecraft.Client\PS3\Assert;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;$(SCE_PS3_ROOT)\host-win32\sn\ppu\include;$(ProjectDir)\..\Minecraft.Client\PS3\PS3Extras;$(ProjectDir)\..\Minecraft.Client\PS3\PS3Extras\boost_1_53_0\boost\tr1\tr1;$(ProjectDir)\..\Minecraft.Client\PS3\PS3Extras\boost_1_53_0;$(ProjectDir)..\Minecraft.World\x64headers</IncludePath>
     <TargetExt>.elf</TargetExt>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|PSVita'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)..\Minecraft.World\x64headers;$(ProjectDir)\..\Minecraft.Client\PSVita\PSVitaExtras</IncludePath>
     <TargetExt>.elf</TargetExt>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|PS3'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\..\Minecraft.Client\PS3\Assert;$(SCE_PS3_ROOT)\target\ppu\include;$(SCE_PS3_ROOT)\target\common\include;$(SCE_PS3_ROOT)\host-win32\sn\ppu\include;$(ProjectDir)\..\Minecraft.Client\PS3\PS3Extras;$(ProjectDir)\..\Minecraft.Client\PS3\PS3Extras\boost_1_53_0\boost\tr1\tr1;$(ProjectDir)\..\Minecraft.Client\PS3\PS3Extras\boost_1_53_0;$(ProjectDir)..\Minecraft.World\x64headers</IncludePath>
     <TargetExt>.self</TargetExt>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|PSVita'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(SCE_PSP2_SDK_DIR)/target\src\npToolkit\include;$(ProjectDir)\..\Minecraft.Client\PSVita\Assert;$(ProjectDir);$(ProjectDir)..\Minecraft.World\x64headers;$(ProjectDir)\..\Minecraft.Client\PSVita\PSVitaExtras</IncludePath>
     <TargetExt>.self</TargetExt>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|PS3'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|PSVita'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)..\Minecraft.World\x64headers;$(ProjectDir)\..\Minecraft.Client\PSVita\PSVitaExtras</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
     <EnableClangTidyCodeAnalysis>false</EnableClangTidyCodeAnalysis>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage|ARM64EC'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
     <EnableClangTidyCodeAnalysis>false</EnableClangTidyCodeAnalysis>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|ARM64EC'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
     <EnableClangTidyCodeAnalysis>false</EnableClangTidyCodeAnalysis>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|ARM64EC'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
     <EnableClangTidyCodeAnalysis>false</EnableClangTidyCodeAnalysis>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|ARM64EC'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\Xbox\Sentient\Include;$(IncludePath)</IncludePath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage|Durango'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)Durango\DurangoExtras;$(ProjectDir)\x64headers;$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)\Xbox\Sentient\Include;$(Console_SdkIncludeRoot)</IncludePath>
@@ -1031,11 +1119,12 @@
     <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
     <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
     <TargetName>$(ProjectName)</TargetName>
-    <IntDir>$(OutputPath)</IntDir>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
     <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|Durango'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)\Xbox\Sentient\Include;$(Console_SdkIncludeRoot)</IncludePath>
@@ -1043,9 +1132,11 @@
     <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
     <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
     <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|Durango'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)\Xbox\Sentient\Include;$(Console_SdkIncludeRoot)</IncludePath>
@@ -1053,9 +1144,11 @@
     <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
     <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
     <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|Durango'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)\Xbox\Sentient\Include;$(Console_SdkIncludeRoot)</IncludePath>
@@ -1063,9 +1156,11 @@
     <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
     <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
     <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugContentPackage|Durango'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <OutputFile>$(OutputPath)default$(TargetExt)</OutputFile>
     <ImageXexOutput>$(OutputPath)default.xex</ImageXexOutput>
     <IncludePath>$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)\Xbox\Sentient\Include;$(Console_SdkIncludeRoot)</IncludePath>
@@ -1073,27 +1168,42 @@
     <ReferencePath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</ReferencePath>
     <LibraryPath>$(Console_SdkLibPath)</LibraryPath>
     <LibraryWPath>$(Console_SdkLibPath);$(Console_SdkWindowsMetadataPath)</LibraryWPath>
+	<IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage|ORBIS'">
     <IncludePath>$(ProjectDir)\..\Minecraft.Client\Orbis\Assert;$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)Orbis\OrbisExtras;$(SCE_ORBIS_SDK_DIR)\host_tools\lib\clang\include;$(SCE_ORBIS_SDK_DIR)\target\include;$(SCE_ORBIS_SDK_DIR)\target\include_common</IncludePath>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CONTENTPACKAGE_SYMBOLS|ORBIS'">
     <IncludePath>$(ProjectDir)\..\Minecraft.Client\Orbis\Assert;$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)Orbis\OrbisExtras;$(SCE_ORBIS_SDK_DIR)\host_tools\lib\clang\include;$(SCE_ORBIS_SDK_DIR)\target\include;$(SCE_ORBIS_SDK_DIR)\target\include_common</IncludePath>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseForArt|ORBIS'">
     <IncludePath>$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)Orbis\OrbisExtras;$(SCE_ORBIS_SDK_DIR)\host_tools\lib\clang\include;$(SCE_ORBIS_SDK_DIR)\target\include;$(SCE_ORBIS_SDK_DIR)\target\include_common;</IncludePath>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_NO_TU|ORBIS'">
     <IncludePath>$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)Orbis\OrbisExtras;$(SCE_ORBIS_SDK_DIR)\host_tools\lib\clang\include;$(SCE_ORBIS_SDK_DIR)\target\include;$(SCE_ORBIS_SDK_DIR)\target\include_common;</IncludePath>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
     <IncludePath>$(ProjectDir)\..\Minecraft.Client\Orbis\Assert;$(ProjectDir);$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)Orbis\OrbisExtras;$(SCE_ORBIS_SDK_DIR)\host_tools\lib\clang\include;$(SCE_ORBIS_SDK_DIR)\target\include;$(SCE_ORBIS_SDK_DIR)\target\include_common</IncludePath>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
     <IncludePath>$(ProjectDir)\..\Minecraft.Client\Orbis\Assert;$(ProjectDir);$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)Orbis\OrbisExtras;$(SCE_ORBIS_SDK_DIR)\host_tools\lib\clang\include;$(SCE_ORBIS_SDK_DIR)\target\include;$(SCE_ORBIS_SDK_DIR)\target\include_common</IncludePath>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_Vita|ORBIS'">
     <IncludePath>$(ProjectDir)\..\Minecraft.Client\Orbis\Assert;$(ProjectDir);$(ProjectDir)\..\Minecraft.World\x64headers;$(ProjectDir)Orbis\OrbisExtras;$(SCE_ORBIS_SDK_DIR)\host_tools\lib\clang\include;$(SCE_ORBIS_SDK_DIR)\target\include;$(SCE_ORBIS_SDK_DIR)\target\include_common</IncludePath>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)enc_temp_folder\</IntDir>
   </PropertyGroup>
   <PropertyGroup>
     <RemoveExtraDeployFiles>false</RemoveExtraDeployFiles>

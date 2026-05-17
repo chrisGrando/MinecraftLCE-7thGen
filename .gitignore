@@ -386,21 +386,21 @@ enc_temp_folder/
 Minecraft.Client/bin/*
 Minecraft.World/bin/*
 
-Minecraft.Client/x64/*
-Minecraft.Client/Debug/*
-Minecraft.Client/Release/*
-Minecraft.Client/ContentPackage_NO_TU/*
-Minecraft.Client/CONTENTPACKAGE_SYMBOLS/*
-Minecraft.Client/ContentPackage/*
-Minecraft.Client/ReleaseForArt/*
+Minecraft.Client/**/x64/*
+Minecraft.Client/**/Debug/*
+Minecraft.Client/**/Release/*
+Minecraft.Client/**/ContentPackage_NO_TU/*
+Minecraft.Client/**/CONTENTPACKAGE_SYMBOLS/*
+Minecraft.Client/**/ContentPackage/*
+Minecraft.Client/**/ReleaseForArt/*
 
-Minecraft.World/x64/*
-Minecraft.World/Debug/*
-Minecraft.World/Release/*
-Minecraft.World/ContentPackage_NO_TU/*
-Minecraft.World/CONTENTPACKAGE_SYMBOLS/*
-Minecraft.World/ContentPackage/*
-Minecraft.World/ReleaseForArt/*
+Minecraft.World/**/x64/*
+Minecraft.World/**/Debug/*
+Minecraft.World/**/Release/*
+Minecraft.World/**/ContentPackage_NO_TU/*
+Minecraft.World/**/CONTENTPACKAGE_SYMBOLS/*
+Minecraft.World/**/ContentPackage/*
+Minecraft.World/**/ReleaseForArt/*
 
 # Game data
 Minecraft.Client/Schematics/*
