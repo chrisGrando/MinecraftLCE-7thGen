@@ -1683,7 +1683,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
       <Pal50Incompatible>true</Pal50Incompatible>
     </ImageXex>
     <PostBuildEvent>
-      <Command>powershell -ExecutionPolicy Bypass -File "$(ProjectDir)postbuild.ps1" -OutDir "$(OutDir)" -ProjectDir "$(ProjectDir)"</Command>
+      <Command>powershell -ExecutionPolicy Bypass -File "$(ProjectDir)postbuild.ps1" -OutDir $(OutDir) -ProjectDir $(ProjectDir)</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>Run post-build script</Message>
@@ -1731,7 +1731,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
       <Pal50Incompatible>true</Pal50Incompatible>
     </ImageXex>
     <PostBuildEvent>
-      <Command>powershell -ExecutionPolicy Bypass -File "$(ProjectDir)postbuild.ps1" -OutDir "$(OutDir)" -ProjectDir "$(ProjectDir)"</Command>
+      <Command>powershell -ExecutionPolicy Bypass -File "$(ProjectDir)postbuild.ps1" -OutDir $(OutDir) -ProjectDir $(ProjectDir)</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>Run post-build script</Message>
@@ -1764,7 +1764,7 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
     </Link>
     <PostBuildEvent>
       <Message>Run postbuild script</Message>
-      <Command>powershell -ExecutionPolicy Bypass -File "$(ProjectDir)postbuild.ps1" -OutDir "$(OutDir)" -ProjectDir "$(ProjectDir)"</Command>
+      <Command>powershell -ExecutionPolicy Bypass -File "$(ProjectDir)postbuild.ps1" -OutDir $(OutDir) -ProjectDir $(ProjectDir)</Command>
     </PostBuildEvent>
     <ImageXex>
       <ConfigurationFile>$(ProjectDir)xbox\xex-dev.xml</ConfigurationFile>
@@ -1894,7 +1894,7 @@ xcopy /q /y /i /s /e $(ProjectDir)DurangoMedia\CU  $(LayoutDir)Image\Loose\CU</C
     </Link>
     <PostBuildEvent>
       <Message>Run postbuild script</Message>
-      <Command>powershell -ExecutionPolicy Bypass -File "$(ProjectDir)postbuild.ps1" -OutDir "$(OutDir)" -ProjectDir "$(ProjectDir)"</Command>
+      <Command>powershell -ExecutionPolicy Bypass -File "$(ProjectDir)postbuild.ps1" -OutDir $(OutDir) -ProjectDir $(ProjectDir)</Command>
     </PostBuildEvent>
     <ImageXex>
       <ConfigurationFile>$(ProjectDir)xbox\xex-dev.xml</ConfigurationFile>
@@ -1941,7 +1941,7 @@ xcopy /q /y /i /s /e $(ProjectDir)DurangoMedia\CU  $(LayoutDir)Image\Loose\CU</C
     </Link>
     <PostBuildEvent>
       <Message>Run postbuild script</Message>
-      <Command>powershell -ExecutionPolicy Bypass -File "$(ProjectDir)postbuild.ps1" -OutDir "$(OutDir)" -ProjectDir "$(ProjectDir)"</Command>
+      <Command>powershell -ExecutionPolicy Bypass -File "$(ProjectDir)postbuild.ps1" -OutDir $(OutDir) -ProjectDir $(ProjectDir)</Command>
     </PostBuildEvent>
     <ImageXex>
       <ConfigurationFile>$(ProjectDir)xbox\xex-dev.xml</ConfigurationFile>
