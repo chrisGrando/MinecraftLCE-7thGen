@@ -1,5 +1,4 @@
 #pragma once
-#include <stdint.h>
 
 #define	MAP_STYLE_0		0
 #define	MAP_STYLE_1		1

@@ -1688,12 +1688,6 @@ if not exist "$(TargetDir)\savedata" mkdir "$(TargetDir)\savedata"</Command>
     <PostBuildEvent>
       <Message>Run post-build script</Message>
     </PostBuildEvent>
-    <PreBuildEvent>
-      <Command>powershell -ExecutionPolicy Bypass -File "$(ProjectDir)prebuild.ps1"</Command>
-    </PreBuildEvent>
-    <PreBuildEvent>
-      <Message>Run pre-build script</Message>
-    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64EC'">
     <ClCompile>
@@ -1906,12 +1900,6 @@ xcopy /q /y /i /s /e $(ProjectDir)DurangoMedia\CU  $(LayoutDir)Image\Loose\CU</C
       <AdditionalSections>584111F7=$(ProjectDir)xbox\GameConfig\Minecraft.spa,RO;media=$(ProjectDir)xbox\XZP\Minecraft.xzp,RO</AdditionalSections>
       <Pal50Incompatible>true</Pal50Incompatible>
     </ImageXex>
-    <PreBuildEvent>
-      <Command>powershell -ExecutionPolicy Bypass -File "$(ProjectDir)prebuild.ps1"</Command>
-    </PreBuildEvent>
-    <PreBuildEvent>
-      <Message>Run pre-build script</Message>
-    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64EC'">
     <ClCompile>
