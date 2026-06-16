@@ -26,7 +26,8 @@ features or that breaks Xbox 360 / PS3 / PSVita builds.
 ## Building for PC and 8th Generation
 
 > [!CAUTION]
-> Building for Xbox One, PS4 and 32-bit Windows was NOT tested!
+> Building for Xbox One, PS4 was **NOT** tested!</br>
+> Compiling to 32-bit Windows is **NOT** working!
 
 ### Requirements
 1. Visual Studio 2012 Professional (or Ultimate)
