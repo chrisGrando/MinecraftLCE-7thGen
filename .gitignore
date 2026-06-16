@@ -377,7 +377,9 @@ FodyWeavers.xsd
 *.sln.iml
 
 # Additional files built by Visual Studio
-enc_temp_folder/
+enc_temp_folder/*
+Minecraft.Client/bin/intdir/*
+Minecraft.World/bin/intdir/*
 
 ### Game Project ###
 ## Ignore or keep game specific files
