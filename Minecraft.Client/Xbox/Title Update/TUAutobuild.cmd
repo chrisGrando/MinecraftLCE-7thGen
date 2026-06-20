@@ -1,14 +1,9 @@
-
-BuildConsole.exe "..\..\..\MinecraftConsoles.sln" /build /showagent /openmonitor /nowait /cfg="ContentPackage_NO_TU|Xbox 360"
+@echo OFF
+call "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\vcvarsall.bat" x86_amd64
+cd %~dp0
+MSBuild "..\..\..\MinecraftConsoles.sln" /maxcpucount /target:Rebuild /property:Configuration=ContentPackage;Platform="Xbox 360"
 pause
-BuildConsole.exe "..\..\..\MinecraftConsoles.sln" /build /showagent /openmonitor /nowait /cfg="ContentPackage|Xbox 360"
-pause
-
-REM "C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\devenv.exe" "..\..\..\MinecraftConsoles.sln" /Clean "ContentPackage|Xbox 360" /ProjectConfig "ContentPackage|Xbox 360" /Out clean.txt /NoLogo
-REM "C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\devenv.exe" "..\..\..\MinecraftConsoles.sln" /Build "ContentPackage|Xbox 360" /ProjectConfig "ContentPackage|Xbox 360" /Out build.txt /NoLogo
-
-REM "C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\devenv.exe" "..\..\..\Minecraft360.sln" /Clean ContentPackageNoTU /ProjectConfig ContentPackageNoTU /Out cleanNoTU.txt /NoLogo
-REM "C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\devenv.exe" "..\..\..\Minecraft360.sln" /Build ContentPackageNoTU /ProjectConfig ContentPackageNoTU /Out buildNoTU.txt /NoLogo
+@echo ON
 
 mkdir .\TitleUpdate\Package
 mkdir .\TitleUpdate\Package\res
@@ -30,8 +25,8 @@ mkdir .\TitleUpdate\Package\res\textures\items
 mkdir .\TitleUpdate\Docs
 mkdir .\TitleUpdate\Released
 
-copy .\Minecraft_12.03.30.0062\Package\default.xex 						.\TitleUpdate\Released\default.xex
-copy ..\..\ContentPackage\default.xex 									.\TitleUpdate\Package\default.xex
+copy "..\..\bin\Xbox 360\ContentPackage\default.xex"					.\TitleUpdate\Released\default.xex
+copy .\TitleUpdate\Released\default.xex 								.\TitleUpdate\Package\default.xex
 copy ..\..\Common\res\font\Mojangles_7.png 								.\TitleUpdate\Package\res\font\Mojangles_7.png
 copy ..\..\Common\res\font\Mojangles_11.png 							.\TitleUpdate\Package\res\font\Mojangles_11.png
 copy ..\..\Common\res\TitleUpdate\res\terrain.png						.\TitleUpdate\Package\res\terrain.png 
@@ -114,13 +109,12 @@ copy ..\..\Common\res\TitleUpdate\res\font\Default.png  				.\TitleUpdate\Packag
 
 REM copy Minecraft_response_doc.xls 									.\TitleUpdate\Docs
 
-
-c:\perl64\bin\perl tubuild.plx
+REM perl tubuild.plx
 
 REM blast Minecraft_Day1TU.xlast /L:3
 
 REM zip it
 
-zipthebuild.cmd
+REM zipthebuild.cmd
 
 pause

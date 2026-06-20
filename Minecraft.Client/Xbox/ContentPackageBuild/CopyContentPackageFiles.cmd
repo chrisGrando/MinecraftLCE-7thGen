@@ -1,3 +1,4 @@
+cd %~dp0
 mkdir .\Package
 copy "..\..\bin\Xbox 360\ContentPackage\default.xex" .\Package\default.xex
 
